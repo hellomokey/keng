@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-
+#ZUI QIANG
 from django.contrib import admin
 from mylib.views import *
 
