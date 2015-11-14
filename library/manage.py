@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
-#sb b2
+#sb b22
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "library.settings")
 
