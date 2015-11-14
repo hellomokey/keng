@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+	<title>library</title>
+</head>
+
+<body>
+<div align="center">更新图书信息</div>
+<div align="center"><a href="/books/">主页</a></div>
+<form method="post">
+<table border=1 align="center">
+<tr>
+	<th>ISBN</th><th>Title</th><th>AuthorID</th><th>Publisher</th><th>PublishDate</th><th>Price</th>
+</tr>
+<tr>
+	<td><input name="ISBN" size = 10 type = "text" value={{ book.ISBN }}></td>
+	<td><input name="Title" type="text" value={{ book.Title}}></td>
+	<td><input name="AuthorID" type="text" value={{ book.AuthorID.AuthorID}}></td>
+	<td><input name="Publisher" type="text" value={{ book.Publisher}}></td>
+	<td><input name="PublishDate" type="text" value={{ book.PublishDate}}></td>
+	<td><input name="Price" type="text"{{ book.Price}}></td>
+	<td><input type="submit" value="保存"> <input type="reset" value="重填"></td>
+</tr>
+</table>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+	<title>书籍信息</title>
+</head>
+
+<body>
+<div align="center"><a href="/books/">主页</a></div>
+
+<table border=1 align="center">
+<tr>
+	<th>ISBN</th><th>Title</th><th>AuthorID</th><th>Publisher</th><th>PublishDate</th><th>Price</th>
+</tr>
+<tr>
+	<td>{{ book.ISBN }}</td>
+	<td>{{ book.Title}}</td>
+	<td>{{ book.AuthorID.AuthorID}}</td>
+	<td>{{ book.Publisher}}</td>
+	<td>{{ book.PublishDate}}</td>
+	<td>{{ book.Price}}</td>
+</tr>
+</table>
+
+<table border=1 align="center">
+<tr>
+	<th>AuthorID</th><th>Name</th><th>Age</th><th>Country</th>
+</tr>
+
+<tr>
+	<td>{{book.AuthorID.AuthorID}}</td>
+	<td>{{book.AuthorID.Name}}</td>
+	<td>{{book.AuthorID.Age}}</td>
+	<td>{{book.AuthorID.Country}}</td>
+</tr>
+	
+</table>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+	<title>library</title>
+</head>
+
+<body>
+<div align="center"><a href="/books/">主页</a></div>
+<table border=1 align="center">
+<tr>
+	<th>ISBN</th><th>Title</th><th>AuthorID</th><th>Publisher</th><th>PublishDate</th><th>Price</th>
+</tr>
+{% for book in books %}
+<tr>
+	<td>{{ book.ISBN }}</td>
+	<td>{{ book.Title}}</td>
+	<td>{{ book.AuthorID.AuthorID}}</td>
+	<td>{{ book.Publisher}}</td>
+	<td>{{ book.PublishDate}}</td>
+	<td>{{ book.Price}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+
+</html>

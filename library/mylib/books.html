@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+	<title>library</title>
+</head>
+
+<body>
+<div align="center">请输入作者姓名</div>
+	<form action="/search_result/" method="post" align="center">
+        <input type="text" name="search">
+        <input type="submit" value="Search">
+    </form>
+<div align="center"><a href="/add_book/">添加书籍</a></div>
+<table border=1 align="center">
+<tr>
+	<th>ISBN</th><th>Title</th><th>AuthorID</th><th>Publisher</th><th>PublishDate</th><th>Price</th>
+</tr>
+{% for book in books %}
+<tr>
+	<td>{{ book.ISBN }}</td>
+	<td><a href="/book_information/?ISBN={{book.ISBN}}">{{ book.Title}}</a></td>
+	<td>{{ book.AuthorID.AuthorID}}</td>
+	<td>{{ book.Publisher}}</td>
+	<td>{{ book.PublishDate}}</td>
+	<td>{{ book.Price}}</td>
+	<td><a href="/delete/?ISBN={{book.ISBN}}">删除</a>
+	  <a href="/update_book/?ISBN={{book.ISBN}}">修改</a></td>
+</tr>
+{% endfor %}
+</table>
+</body>
+
+</html>
